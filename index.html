@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyaluronic Acid & Sodium Hyaluronate — Market Intelligence & Feasibility Report</title>
+<style>
+:root{
+  --navy:#0d1b2a; --navy2:#132b45; --blue:#1565c0; --sky:#4fc3f7;
+  --bg:#f0f2f5; --card:#ffffff; --ink:#1a1a2e; --grey:#546e7a;
+  --amber-bg:#fff8e1; --amber-bd:#f9a825; --amber:#ffc107;
+  --green:#1b5e20; --greenl:#e8f5e9; --red:#b71c1c; --redl:#ffebee;
+  --orange:#e65100; --orangel:#fff3e0;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;padding:0;display:flex;min-height:100vh;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+
+/* SIDEBAR */
+.sidebar{width:260px;min-width:260px;position:fixed;top:0;left:0;height:100vh;overflow-y:auto;background:var(--navy);z-index:100;padding:0 0 24px 0;}
+.brand{padding:18px 16px 12px 16px;border-bottom:1px solid rgba(255,255,255,.08);}
+.brand-label{color:var(--sky);font-size:11px;letter-spacing:1.5px;font-weight:700;text-transform:uppercase;}
+.brand-title{color:#fff;font-size:15px;font-weight:700;margin-top:4px;line-height:1.3;}
+.meta{padding:12px 16px;font-size:11px;color:#b0bec5;border-bottom:1px solid rgba(255,255,255,.08);}
+.meta div{margin:3px 0;}
+.meta b{color:#eceff1;}
+.sidebar-badge{display:inline-block;padding:4px 10px;border-radius:12px;font-size:10px;font-weight:600;margin:3px 3px 0 0;}
+.badge-approved{background:#1b5e20;color:#a5d6a7;border:1px solid #388e3c;}
+.badge-regulated{background:#1a237e;color:#90caf9;border:1px solid #3949ab;}
+.badge-warning{background:#e65100;color:#ffe0b2;border:1px solid #ef6c00;}
+.badge-mode{background:#01579b;color:#b3e5fc;border:1px solid #0288d1;}
+.confidential-notice{margin:12px 10px 16px 10px;padding:10px 12px;background:rgba(255,193,7,.12);border:1px solid rgba(255,193,7,.35);border-radius:6px;}
+.conf-title{color:#ffc107;font-size:10px;font-weight:700;letter-spacing:.5px;margin-bottom:5px;}
+.conf-text{color:#b0bec5;font-size:9.5px;line-height:1.45;}
+.nav-group{padding:8px 16px 4px 16px;color:#607d8b;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:6px;}
+.nav-link{display:flex;align-items:center;gap:9px;padding:7px 16px;color:#cfd8dc;text-decoration:none;font-size:12.5px;border-left:3px solid transparent;transition:all .15s;}
+.nav-link:hover{background:rgba(79,195,247,.08);color:#fff;}
+.nav-link.active{background:rgba(79,195,247,.14);color:#fff;border-left:3px solid var(--sky);}
+.nav-num{font-size:10px;font-weight:700;color:var(--sky);min-width:18px;}
+.pdf-btn{display:block;margin:18px 16px 0 16px;padding:11px;background:var(--blue);color:#fff;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;text-align:center;width:calc(100% - 32px);}
+.pdf-btn:hover{background:#0d47a1;}
+
+/* MAIN */
+.main-content{margin-left:260px;width:calc(100% - 260px);min-height:100vh;background:var(--bg);}
+.hero{background:linear-gradient(135deg,#0d1b2a 0%,#1a3a5c 60%,#1565c0 130%);color:#fff;padding:38px 44px 30px 44px;}
+.hero-type{display:inline-block;background:rgba(255,193,7,.18);border:1px solid rgba(255,193,7,.4);color:#ffe082;font-size:11px;font-weight:600;padding:5px 12px;border-radius:14px;letter-spacing:.5px;}
+.hero h1{font-size:30px;margin:14px 0 6px 0;font-weight:700;}
+.hero .sub{font-size:14px;color:#b3cde0;max-width:820px;}
+.chips{margin-top:14px;}
+.chip{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:#e1f5fe;font-size:11px;padding:4px 11px;border-radius:12px;margin:3px 5px 3px 0;}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:22px;}
+.kpi{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:14px 16px;}
+.kpi .v{font-size:21px;font-weight:700;color:#fff;}
+.kpi .l{font-size:10.5px;color:#90caf9;text-transform:uppercase;letter-spacing:.5px;margin-top:3px;}
+.kpi .s{font-size:10px;color:#78909c;margin-top:2px;}
+
+.wrap{padding:26px 44px 60px 44px;}
+.report-section{margin-bottom:34px;scroll-margin-top:12px;}
+.sec-head{display:flex;align-items:center;gap:13px;margin-bottom:14px;}
+.sec-num{background:var(--blue);color:#fff;font-size:15px;font-weight:700;width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.sec-title{font-size:20px;font-weight:700;color:var(--navy);}
+.sec-sub{font-size:12.5px;color:var(--grey);margin-top:1px;}
+.card{background:var(--card);border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.06);padding:20px 22px;margin-bottom:16px;}
+.card h3{font-size:15px;color:var(--navy);margin:0 0 10px 0;font-weight:700;border-left:3px solid var(--blue);padding-left:9px;}
+.card h4{font-size:13.5px;color:var(--blue);margin:14px 0 7px 0;font-weight:700;}
+p{margin:8px 0;font-size:13px;}
+.src{font-size:10.5px;}
+.src a{color:var(--blue);text-decoration:none;}
+.src a:hover{text-decoration:underline;}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:12px;}
+th{background:var(--blue);color:#fff;text-align:left;padding:8px 10px;font-weight:600;font-size:11.5px;}
+td{padding:7px 10px;border-bottom:1px solid #eceff1;vertical-align:top;}
+tr:nth-child(even) td{background:#f7f9fc;}
+tr:hover td{background:#eef4fb;}
+.india-row td{background:var(--amber-bg)!important;border-left:3px solid var(--amber-bd);}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:11px;margin:10px 0;}
+.pcard{background:#f7f9fc;border:1px solid #e3e9f0;border-radius:8px;padding:11px 13px;}
+.pcard .pl{font-size:10px;color:var(--grey);text-transform:uppercase;letter-spacing:.4px;font-weight:600;}
+.pcard .pv{font-size:14px;font-weight:700;color:var(--navy);margin-top:3px;}
+.alert{border-radius:8px;padding:12px 15px;margin:12px 0;font-size:12.5px;border-left:4px solid;}
+.alert b{display:block;margin-bottom:3px;}
+.alert-info{background:#e3f2fd;border-color:var(--blue);color:#0d47a1;}
+.alert-warn{background:var(--orangel);border-color:var(--orange);color:#bf360c;}
+.alert-success{background:var(--greenl);border-color:var(--green);color:#1b5e20;}
+.alert-danger{background:var(--redl);border-color:var(--red);color:#b71c1c;}
+.tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10.5px;font-weight:700;}
+.t-hi{background:var(--redl);color:var(--red);}
+.t-med{background:var(--orangel);color:var(--orange);}
+.t-lo{background:var(--greenl);color:var(--green);}
+.t-yes{background:var(--greenl);color:var(--green);}
+.t-no{background:#eceff1;color:var(--grey);}
+.swot{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:10px 0;}
+.swot-q{border-radius:9px;padding:14px 16px;color:#fff;}
+.swot-q h4{color:#fff;margin:0 0 8px 0;font-size:14px;}
+.swot-q ul{margin:0;padding-left:17px;font-size:12px;}
+.swot-q li{margin:4px 0;}
+.sw-s{background:var(--green);} .sw-w{background:var(--red);}
+.sw-o{background:var(--blue);} .sw-t{background:var(--orange);}
+.forces{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:10px 0;}
+.force{background:#f7f9fc;border-radius:9px;padding:13px 15px;border-top:4px solid var(--blue);}
+.force h4{margin:0 0 5px 0;font-size:13px;}
+.force .lvl{font-size:11px;font-weight:700;margin-bottom:5px;}
+.force p{font-size:11.5px;margin:0;color:var(--grey);}
+.f-hi{border-top-color:var(--red);} .f-med{border-top-color:var(--orange);} .f-lo{border-top-color:var(--green);}
+.chain{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0;align-items:stretch;}
+.chain-step{flex:1;min-width:90px;background:#eceff1;border-radius:8px;padding:10px 8px;text-align:center;font-size:11px;position:relative;color:var(--grey);}
+.chain-step.on{background:var(--blue);color:#fff;font-weight:700;}
+.chain-step .cs-n{font-size:9px;opacity:.7;}
+.steps{counter-reset:step;list-style:none;padding:0;margin:12px 0;}
+.steps li{position:relative;padding:10px 0 10px 46px;border-bottom:1px solid #eceff1;font-size:12.5px;counter-increment:step;}
+.steps li::before{content:counter(step);position:absolute;left:0;top:9px;width:30px;height:30px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;}
+.steps li b{color:var(--navy);}
+.steps li .tl{display:inline-block;background:#e3f2fd;color:var(--blue);font-size:10px;font-weight:700;padding:2px 8px;border-radius:9px;margin-left:6px;}
+.verdict{border-radius:11px;padding:20px 24px;color:#fff;margin:10px 0;}
+.verdict.rec{background:linear-gradient(120deg,#1b5e20,#2e7d32);}
+.verdict.cond{background:linear-gradient(120deg,#e65100,#ef6c00);}
+.verdict.not{background:linear-gradient(120deg,#b71c1c,#c62828);}
+.verdict .vlabel{font-size:12px;letter-spacing:1px;opacity:.85;text-transform:uppercase;}
+.verdict .vmain{font-size:22px;font-weight:800;margin:5px 0;}
+.verdict p{color:#fff;opacity:.95;margin:6px 0 0 0;font-size:13px;}
+.refs{counter-reset:ref;list-style:none;padding:0;font-size:11.5px;}
+.refs li{counter-increment:ref;padding:6px 0 6px 34px;position:relative;border-bottom:1px solid #f0f2f5;}
+.refs li::before{content:"["counter(ref)"]";position:absolute;left:0;top:6px;color:var(--blue);font-weight:700;font-size:10.5px;}
+.refs a{color:var(--blue);text-decoration:none;word-break:break-all;}
+.footer{background:var(--navy);color:#b0bec5;padding:26px 44px;font-size:11.5px;}
+.footer b{color:#fff;}
+.hl{background:#fff59d;padding:0 3px;border-radius:3px;font-weight:600;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.mini-note{font-size:11px;color:var(--grey);font-style:italic;margin-top:4px;}
+@media print{
+  .sidebar{position:fixed;}
+  .pdf-btn{display:none;}
+  .main-content{margin-left:260px;}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .report-section{page-break-inside:avoid;}
+}
+@media(max-width:900px){
+  .two-col,.swot{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="brand">
+    <div class="brand-label">Market Intelligence</div>
+    <div class="brand-title">Hyaluronic Acid &amp; Sodium Hyaluronate</div>
+  </div>
+  <div class="meta">
+    <div><b>Report Date:</b> July 2026</div>
+    <div><b>CAS:</b> 9004-61-9 (acid) / 9067-32-7 (Na salt)</div>
+    <div><b>Report Type:</b> Secondary Research + Trade Data</div>
+    <div style="margin-top:7px;">
+      <span class="sidebar-badge badge-approved">Non-Scheduled</span>
+      <span class="sidebar-badge badge-regulated">CDSCO (Injectable)</span>
+      <span class="sidebar-badge badge-mode">Import + Trade</span>
+    </div>
+  </div>
+  <div class="confidential-notice">
+    <div class="conf-title">🔒 CONFIDENTIAL</div>
+    <div class="conf-text">For Internal Management Use Only. Based on publicly available secondary research and the supplied trade-data workbook. Market-size estimates from third-party sources may vary. Not investment or financial advice.</div>
+  </div>
+  <div class="nav-group">Secondary Research</div>
+  <a href="#s01" class="nav-link" data-section="s01"><span class="nav-num">01</span> Product Overview</a>
+  <a href="#s02" class="nav-link" data-section="s02"><span class="nav-num">02</span> Synthesis &amp; Mfg</a>
+  <a href="#s03" class="nav-link" data-section="s03"><span class="nav-num">03</span> Applications &amp; Sizes</a>
+  <a href="#s04" class="nav-link" data-section="s04"><span class="nav-num">04</span> Market Analysis</a>
+  <a href="#s05" class="nav-link" data-section="s05"><span class="nav-num">05</span> News &amp; Intelligence</a>
+  <a href="#s06" class="nav-link" data-section="s06"><span class="nav-num">06</span> Pricing Intelligence</a>
+  <a href="#s07" class="nav-link" data-section="s07"><span class="nav-num">07</span> Regulatory</a>
+  <a href="#s08" class="nav-link" data-section="s08"><span class="nav-num">08</span> Target Customers</a>
+  <a href="#s09" class="nav-link" data-section="s09"><span class="nav-num">09</span> Strategic Frameworks</a>
+  <a href="#s10" class="nav-link" data-section="s10"><span class="nav-num">10</span> Feasibility &amp; Verdict</a>
+  <div class="nav-group">Trade Data</div>
+  <a href="#s11" class="nav-link" data-section="s11"><span class="nav-num">11</span> Trade Data Analysis</a>
+  <a href="#refs" class="nav-link" data-section="refs"><span class="nav-num">§</span> Sources &amp; References</a>
+  <button class="pdf-btn" onclick="window.print()">⬇ Download PDF</button>
+</div>
+
+<!-- MAIN -->
+<div class="main-content">
+  <div class="hero">
+    <span class="hero-type">Report Type: Secondary Market Research + Trade Data Analysis</span>
+    <h1>Hyaluronic Acid &amp; Its Salt (Sodium Hyaluronate)</h1>
+    <div class="sub">Management-ready market intelligence &amp; feasibility assessment across R&amp;D, CRO, import, domestic trading, sourcing &amp; marketing, and manufacturing — with a separate trade-data read-out for the two categories in the supplied workbook: <b>"Hyaluronic Acid &amp; Its Salt"</b> and <b>"Mix &amp; Finished Products of Hyaluronic Acid"</b>.</div>
+    <div class="chips">
+      <span class="chip">CAS 9004-61-9 / 9067-32-7</span>
+      <span class="chip">HS 3913.90 · 3304.99</span>
+      <span class="chip">Bio-fermentation (Streptococcus)</span>
+      <span class="chip">China ≈80% global supply</span>
+      <span class="chip">India = net importer</span>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="v">$11.5 Bn</div><div class="l">Global HA Market 2025</div><div class="s">7.4% CAGR → $20.4 Bn by 2033 [11]</div></div>
+      <div class="kpi"><div class="v">$245.6 Mn</div><div class="l">HA Raw-Material Market 2025</div><div class="s">5.3% CAGR (bulk API/powder) [18]</div></div>
+      <div class="kpi"><div class="v">≈80%</div><div class="l">Chinese Supply Share</div><div class="s">Shandong cluster dominates [29]</div></div>
+      <div class="kpi"><div class="v">$5–300/g</div><div class="l">Grade Price Spread</div><div class="s">Cosmetic → Pharma-injectable [28]</div></div>
+      <div class="kpi"><div class="v">$63.9 Mn</div><div class="l">HA &amp; Salt — Traded Value (file)</div><div class="s">5,283 shipments · 2,272 MT</div></div>
+      <div class="kpi"><div class="v">$5.6 Mn</div><div class="l">Mix &amp; Finished — Traded Value</div><div class="s">1,903 shipments · 10,072 MT</div></div>
+    </div>
+  </div>
+  <div class="wrap">
+
+<!-- ===================== SECTION 01 ===================== -->
+<section id="s01" class="report-section">
+  <div class="sec-head"><div class="sec-num">01</div><div><div class="sec-title">Product Overview &amp; Identity</div><div class="sec-sub">Chemical identity, the acid-vs-salt distinction, properties and grades</div></div></div>
+
+  <div class="card">
+    <h3>What it is — and why "acid" and "salt" are traded as one</h3>
+    <p>Hyaluronic acid (HA) is a naturally occurring, high-molecular-weight linear polysaccharide (a glycosaminoglycan) built from repeating disaccharide units of D-glucuronic acid and N-acetyl-D-glucosamine. In its free-acid form it is chemically unstable and impractical to isolate or store, so virtually all commercial "hyaluronic acid" is in fact its <b>sodium salt — sodium hyaluronate</b>. This is the single most important commercial fact for a trader: the two are sold, invoiced and shipped almost interchangeably, which is exactly why the supplied workbook groups them as one product line.</p>
+
+    <div class="alert alert-info"><b>Key focus point — the acid vs. salt difference (secondary-research basis)</b>
+    The free acid and the sodium salt are the <b>same polymer backbone</b>; the salt simply has the carboxyl protons replaced by sodium. In practice the differences that matter commercially are: (1) <b>Stability &amp; handling</b> — sodium hyaluronate is a stable, hygroscopic white powder with ~3-year shelf life, whereas free HA degrades faster; (2) <b>Solubility</b> — the salt dissolves readily in cold water to a clear viscous gel, making it the preferred form for cosmetics, eye-drops and injectables; (3) <b>Regulatory naming</b> — pharmacopoeias and the cosmetic INCI system list "Sodium Hyaluronate," so finished-product labels and DMFs almost always cite the salt; (4) <b>Molecular weight is the real price driver</b>, not acid-vs-salt — grades run from ultra-low-MW oligomers to &gt;2 million Da. For sourcing, import and trading purposes they can be treated as one commodity with two CAS numbers.</div>
+
+    <h4>Chemical Identity</h4>
+    <table>
+      <tr><th>Property</th><th>Hyaluronic Acid (free acid)</th><th>Sodium Hyaluronate (salt)</th><th>Source</th></tr>
+      <tr><td>IUPAC / INCI</td><td>Hyaluronic acid (hyaluronan)</td><td>Sodium hyaluronate</td><td class="src"><a href="http://www.thecosmeticchemist.com/molecule_of_the_week/hyaluronic_acid.html">[1]</a></td></tr>
+      <tr><td>CAS Number</td><td>9004-61-9</td><td>9067-32-7</td><td class="src"><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4176691.htm">[2]</a></td></tr>
+      <tr><td>EC Number</td><td colspan="2">232-678-0</td><td class="src"><a href="http://www.thecosmeticchemist.com/molecule_of_the_week/hyaluronic_acid.html">[1]</a></td></tr>
+      <tr><td>Molecular Formula</td><td>(C₁₄H₂₁NO₁₁)ₙ</td><td>(C₁₄H₂₀NNaO₁₁)ₙ</td><td class="src"><a href="https://www.usbio.net/biochemicals/278694/Hyaluronic-Acid-Sodium-Salt">[3]</a></td></tr>
+      <tr><td>Molecular Weight</td><td colspan="2">Variable polymer — repeat-unit ~379 (acid) / ~401 (salt) Da; commercial grades 5 kDa → 2.2 million Da</td><td class="src"><a href="https://www.usbio.net/biochemicals/278694/Hyaluronic-Acid-Sodium-Salt">[3]</a></td></tr>
+      <tr><td>PubChem CID</td><td>24759 (hyaluronic acid)</td><td>23663392 (Na hyaluronate)</td><td class="src"><a href="https://www.alfa-chemistry.com/product/sodium-hyaluronate-cas-9067-32-7-295847.html">[7]</a></td></tr>
+      <tr><td>Structure</td><td colspan="2">Linear polysaccharide; β(1→3) and β(1→4) glycosidic bonds between glucuronic acid &amp; N-acetylglucosamine</td><td class="src"><a href="http://www.thecosmeticchemist.com/molecule_of_the_week/hyaluronic_acid.html">[1]</a></td></tr>
+      <tr><td>Key synonyms</td><td colspan="2">Hyaluronan, HA, Hyaluronate sodium, Healon, Hyalgan, Hylan, NaHA; trade names Restylane, Juvéderm (crosslinked filler forms)</td><td class="src"><a href="https://www.usbio.net/biochemicals/278694/Hyaluronic-Acid-Sodium-Salt">[3]</a></td></tr>
+    </table>
+
+    <h4>Physical &amp; Chemical Properties (sodium hyaluronate — the traded form)</h4>
+    <table>
+      <tr><th>Property</th><th>Value</th><th>Source</th></tr>
+      <tr><td>Appearance / physical state</td><td>White to almost-white, very hygroscopic powder or fibrous aggregate; odourless</td><td class="src"><a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10322142">[6]</a></td></tr>
+      <tr><td>pH (5% solution)</td><td>5.0 – 8.5</td><td class="src"><a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10322142">[6]</a></td></tr>
+      <tr><td>Solubility</td><td>Easily soluble in cold water (viscoelastic gel); insoluble in organic solvents</td><td class="src"><a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10322142">[6]</a></td></tr>
+      <tr><td>Water-binding capacity</td><td>Binds up to ~1,000–1,800× its weight in water</td><td class="src"><a href="https://www.alfa-chemistry.com/product/sodium-hyaluronate-cas-9067-32-7-295847.html">[7]</a></td></tr>
+      <tr><td>Stability / storage</td><td>Store cool &amp; dry in tightly sealed containers; powder stable ~3 years unopened</td><td class="src"><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4176691.htm">[2]</a></td></tr>
+      <tr><td>Toxicity</td><td>Relatively non-toxic, non-irritant; LD50 (mouse, IP) 1.5 g/kg</td><td class="src"><a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4176691.htm">[2]</a></td></tr>
+    </table>
+
+    <h4>Product Grades (molecular-weight &amp; purity tiers drive price and application)</h4>
+    <table>
+      <tr><th>Grade</th><th>Typical Purity / MW</th><th>Primary Use</th></tr>
+      <tr><td>Food / Nutraceutical grade</td><td>≥90–95%; low–mid MW</td><td>Oral supplements (joint, skin "beauty-from-within")</td></tr>
+      <tr><td>Cosmetic grade</td><td>≥95%; MW 1.0–2.2 million Da (also low-MW for penetration)</td><td>Serums, creams, masks; humectant</td></tr>
+      <tr><td>Pharmaceutical / API grade</td><td>≥99.9%; endotoxin-controlled, GMP/DMF</td><td>Ophthalmic viscosurgery, OA viscosupplement injections, dermal fillers</td></tr>
+      <tr><td>Cross-linked (BDDE) filler grade</td><td>Modified pharma grade</td><td>Long-lasting dermal fillers (Restylane/Juvéderm type)</td></tr>
+    </table>
+
+    <h4>HS / Tariff Codes</h4>
+    <table>
+      <tr><th>Form</th><th>HS / ITC-HS Code</th><th>Description</th><th>Source</th></tr>
+      <tr class="india-row"><td>Bulk HA / Na-hyaluronate powder (India &amp; US)</td><td>3913.90 (e.g. 39139090)</td><td>Natural &amp; modified natural polymers, primary forms</td><td class="src"><a href="https://www.zauba.com/import-sodium+hyaluronate-hs-code.html">[38]</a></td></tr>
+      <tr class="india-row"><td>Pharma-grade Na-hyaluronate (US ruling)</td><td>3913.90.20 (HTSUS)</td><td>Customs classification, pharma grade</td><td class="src"><a href="https://www.customsmobile.com/rulings/docview?doc_id=HQ+H017425">[36]</a></td></tr>
+      <tr class="india-row"><td>Finished cosmetic preparations (India)</td><td>3304.99.90</td><td>Skin-care preparations containing HA</td><td class="src"><a href="https://www.volza.com/hs-codes/search/hyaluronic-acid/">[34]</a></td></tr>
+    </table>
+    <div class="alert alert-warn"><b>Customs alert</b> HA travels under multiple headings depending on form — bulk polymer (3913.90), cosmetic preparation (3304.99), and even oral/dental or supplement headings. The "Mix &amp; Finished Products" category in your file spans these finished-goods headings, which is why its units and pricing behave completely differently from bulk HA (see Section 11). Confirm the correct ITC-HS line per shipment to avoid duty mis-classification.</div>
+  </div>
+</section>
+
+<!-- ===================== SECTION 02 ===================== -->
+<section id="s02" class="report-section">
+  <div class="sec-head"><div class="sec-num">02</div><div><div class="sec-title">Synthesis &amp; Manufacturing</div><div class="sec-sub">Routes, raw materials and where India can play</div></div></div>
+  <div class="card">
+    <h3>How it is made</h3>
+    <p>Over <b>95% of commercial HA is produced by microbial fermentation</b>, which has largely displaced the older rooster-comb animal-extraction route on grounds of purity, batch consistency, vegan labelling and traceability.</p>
+    <table>
+      <tr><th>#</th><th>Route</th><th>Starting materials &amp; conditions</th><th>Notes / Reference</th></tr>
+      <tr><td>1</td><td><b>Microbial fermentation</b> (bio-based — industry standard)</td><td><i>Streptococcus zooepidemicus</i> or engineered <i>Bacillus subtilis</i>; submerged aerobic fermentation in 50,000–100,000 L stirred-tank bioreactors (glucose/peptone feed), controlled T/pH/DO</td><td class="src"><a href="https://kamrit.com/business-plans/hyaluronic-acid-plant">[22]</a></td></tr>
+      <tr><td>2</td><td>Downstream purification</td><td>Disc-stack centrifugation → tangential-flow microfiltration → ion-exchange chromatography (protein/nucleic-acid removal) → ultrafiltration → alcohol precipitation → drying</td><td class="src"><a href="https://www.cactusbotanics.com/faq/7325.html">[29]</a></td></tr>
+      <tr><td>3</td><td>Animal-tissue extraction (legacy, declining)</td><td>Rooster combs / bovine vitreous; solvent extraction &amp; purification</td><td class="src"><a href="https://reports.valuates.com/market-reports/QYRE-Auto-34F15593/global-and-india-hyaluronic-acid">[23]</a></td></tr>
+      <tr><td>4</td><td>Cross-linking (for fillers)</td><td>Pharma-grade Na-hyaluronate + BDDE cross-linker → stabilised gel for dermal fillers</td><td class="src"><a href="https://www.grandviewresearch.com/industry-analysis/hyaluronic-acid-ha-raw-material-market">[18]</a></td></tr>
+    </table>
+
+    <h4>Key Raw Materials</h4>
+    <table>
+      <tr><th>Material</th><th>Role</th><th>India availability</th><th>Relevance</th></tr>
+      <tr><td>Glucose / sucrose (carbon source)</td><td>Fermentation feedstock</td><td><span class="tag t-lo">Abundant</span></td><td>Low cost, domestic</td></tr>
+      <tr><td>Peptone / yeast extract / nitrogen source</td><td>Nitrogen for microbial growth</td><td><span class="tag t-med">Available</span></td><td>Some imported grades</td></tr>
+      <tr><td>Bacterial strain (Streptococcus / Bacillus)</td><td>Producing organism</td><td><span class="tag t-med">Available / licensable</span></td><td>Strain yield = key IP</td></tr>
+      <tr><td>Chromatography resins, UF membranes</td><td>Downstream purification</td><td><span class="tag t-hi">Mostly imported</span></td><td>Capex &amp; consumable cost</td></tr>
+      <tr><td>Ethanol / IPA</td><td>Precipitation</td><td><span class="tag t-lo">Domestic</span></td><td>Low cost</td></tr>
+    </table>
+    <div class="pgrid">
+      <div class="pcard"><div class="pl">Complexity</div><div class="pv">Medium–High</div></div>
+      <div class="pcard"><div class="pl">Key challenge</div><div class="pv">Downstream purity &amp; MW control</div></div>
+      <div class="pcard"><div class="pl">Plant capex band (India DPR)</div><div class="pv">₹2.2 – 30 crore</div></div>
+      <div class="pcard"><div class="pl">Payback (est.)</div><div class="pv">2.6 – 4.8 yrs</div></div>
+    </div>
+    <div class="alert alert-success"><b>India strategic note</b> India has cost-competitive fermentation infrastructure and a large nutraceutical market (₹45,000 cr). A domestic HA fermentation plant is a documented, bankable proposition under the PLI Bulk-Drug scheme, positioned as import substitution against Chinese dependency — with cosmetic/food grade the easiest entry and pharma grade the higher-margin, higher-barrier target. <span class="src"><a href="https://kamrit.com/business-plans/hyaluronic-acid-plant">[22]</a></span></div>
+  </div>
+</section>
+
+<!-- ===================== SECTION 03 ===================== -->
+<section id="s03" class="report-section">
+  <div class="sec-head"><div class="sec-num">03</div><div><div class="sec-title">Applications, End-Products &amp; Application Market Sizes</div><div class="sec-sub">Where HA is consumed and how big each pocket is</div></div></div>
+  <div class="card">
+    <h3>Application clusters</h3>
+    <table>
+      <tr><th>Application cluster</th><th>End-products / use</th><th>Application market size &amp; CAGR</th><th>Source</th></tr>
+      <tr><td><b>Aesthetics — Dermal fillers</b></td><td>Cross-linked HA injectables (Restylane, Juvéderm, Restylane SHAYPE)</td><td>Largest segment — <b>50.9% of the $11.5 Bn HA market (2025)</b></td><td class="src"><a href="https://www.grandviewresearch.com/industry-analysis/hyaluronic-acid-market">[11]</a></td></tr>
+      <tr><td><b>Orthopaedics — Viscosupplementation</b></td><td>Intra-articular knee/OA injections (Synvisc, Hyalgan, Orthovisc)</td><td>OA segment ~47% share; ~7.17% CAGR (osteoarthritis)</td><td class="src"><a href="https://www.marknteladvisors.com/research-library/global-hyaluronic-acid-market.html">[13]</a></td></tr>
+      <tr><td><b>Ophthalmology</b></td><td>Eye-drops (dry-eye), viscoelastic for cataract surgery (Healon, Provisc)</td><td>2nd-fastest sub-segment — ~6.96% CAGR</td><td class="src"><a href="https://www.grandviewresearch.com/industry-analysis/hyaluronic-acid-market">[11]</a></td></tr>
+      <tr><td><b>Cosmetics / Skincare</b></td><td>Serums, creams, masks (finished HA products)</td><td>HA <b>finished-products</b> market $2.04 Bn (2025) → $2.84 Bn 2031, 5.63% CAGR; facial care 81.5%</td><td class="src"><a href="https://www.mordorintelligence.com/industry-reports/hyaluronic-acid-products-market">[17]</a></td></tr>
+      <tr><td><b>Nutraceuticals</b></td><td>Oral joint/skin supplements</td><td>HA supplement market ~$2.36 Bn (2025), 4.1% CAGR</td><td class="src"><a href="https://www.futuremarketinsights.com/reports/hyaluronic-acid-supplement-market">[19]</a></td></tr>
+      <tr><td><b>Bioprocessing / CGT (emerging)</b></td><td>Cell-culture media, purification buffers, tissue scaffolds</td><td>Fastest demand — high-purity reagents growing 10–12%/yr</td><td class="src"><a href="https://www.indexbox.io/blog/hyaluronic-acid-products-market-forecast-points-higher-toward-2035-driven-by-bioprocessing-and-cgt-demand/">[28]</a></td></tr>
+    </table>
+    <div class="alert alert-info"><b>Reading the two file categories against applications</b> "Hyaluronic Acid &amp; Its Salt" ≈ the <b>bulk raw material / API</b> pockets above (fillers, viscosupplement, ophthalmic, cosmetic-grade powder). "Mix &amp; Finished Products of Hyaluronic Acid" ≈ the <b>finished cosmetic &amp; medical-device</b> pockets (serums, dressings, syringes, ECG/electrode-type finished goods seen in the raw data). This split is why the two behave so differently in the trade numbers.</div>
+  </div>
+</section>
+
+<!-- ===================== SECTION 04 ===================== -->
+<section id="s04" class="report-section">
+  <div class="sec-head"><div class="sec-num">04</div><div><div class="sec-title">Market Analysis</div><div class="sec-sub">Global, India, manufacturing geography and supplier landscape</div></div></div>
+
+  <div class="card">
+    <h3>4A — Global market</h3>
+    <div class="pgrid">
+      <div class="pcard"><div class="pl">Global HA market 2025</div><div class="pv">$11.5 Bn</div></div>
+      <div class="pcard"><div class="pl">Forecast 2033</div><div class="pv">$20.4 Bn</div></div>
+      <div class="pcard"><div class="pl">CAGR</div><div class="pv">7.4%</div></div>
+      <div class="pcard"><div class="pl">Largest region</div><div class="pv">N. America 43%</div></div>
+      <div class="pcard"><div class="pl">Fastest region</div><div class="pv">Asia-Pacific</div></div>
+      <div class="pcard"><div class="pl">Raw-material market</div><div class="pv">$245.6 Mn</div></div>
+    </div>
+    <p>Growth is driven by minimally-invasive aesthetics, an ageing population needing OA and ophthalmic care, and the "skinification" of personal care. <span class="src"><a href="https://www.grandviewresearch.com/industry-analysis/hyaluronic-acid-market">[11]</a> <a href="https://www.grandviewresearch.com/industry-analysis/hyaluronic-acid-ha-raw-material-market">[18]</a></span></p>
+  </div>
+
+  <div class="card">
+    <h3>4B — India market</h3>
+    <table>
+      <tr><th>Dimension</th><th>Finding</th><th>Source</th></tr>
+      <tr class="india-row"><td>Domestic production status</td><td>Minimal primary fermentation capacity today; India is a <b>net importer</b> of bulk HA, mostly re-selling &amp; formulating. Domestic plants are at project/DPR stage.</td><td class="src"><a href="https://kamrit.com/business-plans/hyaluronic-acid-plant">[22]</a></td></tr>
+      <tr class="india-row"><td>Import dependency</td><td>High — bulk HA sourced chiefly from China, plus Japan, France, Czech, Spain, USA (matches file import origins)</td><td class="src"><a href="https://www.zauba.com/import-sodium+hyaluronate-hs-code.html">[38]</a></td></tr>
+      <tr class="india-row"><td>Demand drivers</td><td>Booming skincare/D2C beauty, ₹45,000 cr nutraceutical market, expanding aesthetic clinics, OA burden in ageing population</td><td class="src"><a href="https://kamrit.com/business-plans/hyaluronic-acid-plant">[22]</a></td></tr>
+      <tr class="india-row"><td>Consuming clusters / ports</td><td>Bengaluru (Air Cargo — top), Ahmedabad, Mumbai, Delhi, Hyderabad, Chennai; Baddi/Haridwar (cosmetics mfg)</td><td class="src"><a href="https://www.zauba.com/import-sodium+hyaluronate-hs-code.html">[38]</a></td></tr>
+      <tr class="india-row"><td>Policy relevance</td><td>PLI Bulk-Drug &amp; Medical Devices scheme incentivises fermentation-based APIs → import-substitution opportunity</td><td class="src"><a href="https://kamrit.com/business-plans/hyaluronic-acid-plant">[22]</a></td></tr>
+    </table>
+    <div class="alert alert-success"><b>Trade-data confirmation</b> The file shows India as the <b>#1 importer by value on the weight-based (standard-unit) side after stripping a data artifact</b> — ~$10.9 Mn / 95 MT / 843 shipments of HA &amp; Salt — with origins dominated by China, Japan, Czech, Spain and the USA. This directly confirms the "import-dependent, formulate-and-distribute" market structure (see Section 11).</div>
+  </div>
+
+  <div class="card">
+    <h3>4C — Manufacturing countries</h3>
+    <table>
+      <tr><th>Country</th><th>Role</th><th>Share / note</th></tr>
+      <tr><td><b>China</b></td><td>Dominant bulk producer (Shandong cluster)</td><td><span class="tag t-hi">≈80% global supply</span></td></tr>
+      <tr><td>Japan</td><td>High-purity pharma/food grade</td><td>Kewpie, Kikkoman, Seikagaku</td></tr>
+      <tr><td>France</td><td>Sterile pharma-grade &amp; biopolymers</td><td>HTL Biotechnology</td></tr>
+      <tr><td>Czech Republic</td><td>Pharma-grade</td><td>Contipro, DSM</td></tr>
+      <tr><td>USA / Europe</td><td>Final purification, sterile fill-finish, fillers</td><td>Lifecore, Galderma, AbbVie</td></tr>
+    </table>
+    <p class="mini-note">Supply chain is bifurcated: crude bulk HA is made in China; final purification, sterile filling &amp; regulatory qualification for injectables sit in Europe/Japan/US. <span class="src"><a href="https://www.indexbox.io/blog/hyaluronic-acid-products-market-forecast-points-higher-toward-2035-driven-by-bioprocessing-and-cgt-demand/">[28]</a></span></p>
+  </div>
+
+  <div class="card">
+    <h3>4D — Global manufacturers &amp; suppliers</h3>
+    <table>
+      <tr><th>Company</th><th>Country</th><th>Role</th><th>Website</th></tr>
+      <tr><td>Bloomage Biotechnology</td><td>China</td><td>World's largest HA raw-material producer (&gt;3,000 MT/yr, ~34% of API exports)</td><td class="src"><a href="https://www.bloomagebiotech.com">bloomagebiotech.com</a></td></tr>
+      <tr><td>Shandong Focuschem (Focus Chem)</td><td>China</td><td>Large bulk producer</td><td class="src">focuschem.com</td></tr>
+      <tr><td>Fufeng Group</td><td>China</td><td>Large-scale fermentation</td><td class="src">fufeng-group.com</td></tr>
+      <tr><td>Kewpie Corporation</td><td>Japan</td><td>Food/cosmetic &amp; pharma DMF grades</td><td class="src">kewpie.com</td></tr>
+      <tr><td>HTL Biotechnology</td><td>France</td><td>Pharma-grade / sterile HA</td><td class="src">htlbiotech.com</td></tr>
+      <tr><td>Contipro</td><td>Czech Rep.</td><td>Pharma-grade, traceable HA</td><td class="src">contipro.com</td></tr>
+      <tr><td>Seikagaku</td><td>Japan</td><td>Medical HA / OA drugs</td><td class="src">seikagaku.co.jp</td></tr>
+      <tr class="india-row"><td>Meteoric Biopharmaceuticals</td><td>India</td><td>Exporter/supplier (top Indian supplier in file)</td><td class="src">meteoricbiopharma.com</td></tr>
+      <tr class="india-row"><td>Botanic Healthcare</td><td>India</td><td>Nutraceutical HA exporter</td><td class="src">botanichealthcare.net</td></tr>
+      <tr class="india-row"><td>Titan Biotech</td><td>India</td><td>Biological raw materials</td><td class="src">titanbiotechltd.com</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== SECTION 05 ===================== -->
+<section id="s05" class="report-section">
+  <div class="sec-head"><div class="sec-num">05</div><div><div class="sec-title">Latest News &amp; Industry Intelligence</div><div class="sec-sub">Last 6–18 months, linked to the trade data</div></div></div>
+  <div class="card">
+    <table>
+      <tr><th>News item</th><th>Summary &amp; trade-data linkage</th><th>Source / date</th></tr>
+      <tr><td><b>Chinese oversupply &amp; price war</b></td><td>China's HA capacity (&gt;1,000 MT/yr, doubling) has outstripped demand, forcing aggressive price competition in cosmetic/food grade. <b>Directly explains the file's very low derived $/MT on the "Mix &amp; Finished / OT" side and downward pricing pressure on bulk grades.</b></td><td class="src"><a href="https://marksparksolutions.com/reports/china-hyaluronic-acid-market">[40]</a> · 2025</td></tr>
+      <tr><td><b>Bloomage market-value slump</b></td><td>Bloomage's market cap fell from ¥140 Bn to ~¥28.6 Bn (2022–24) as skincare revenue/margins declined — signals margin compression across the value chain even as volumes grow. Confirms buyer-favourable pricing seen in India import lines.</td><td class="src"><a href="https://eu.36kr.com/en/p/3453714805282179">[46]</a> · 2025</td></tr>
+      <tr><td><b>HTL Biotechnology new sterile line (France)</b></td><td>June 2025 — inaugurated a $13.95 Mn sterile HA production line at Javené for pharma-grade injectables. Reinforces Europe's hold on high-value sterile fill-finish (the premium end India still imports).</td><td class="src"><a href="https://www.grandviewresearch.com/industry-analysis/hyaluronic-acid-market">[41]</a> · 2025</td></tr>
+      <tr><td><b>Fidia acquires Altacor (UK)</b></td><td>Sept 2025 — Fidia entered UK eye-care, extending HA ophthalmic reach. Consolidation at the finished-product end.</td><td class="src"><a href="https://www.grandviewresearch.com/industry-analysis/hyaluronic-acid-ha-raw-material-market">[27]</a> · 2025</td></tr>
+      <tr><td><b>New Chinese certified suppliers emerge</b></td><td>June 2026 — five certified Chinese sodium-hyaluronate makers (Bloomage, Focuschem, Fufeng, Anhua, Habier) profiled with ISO/Kosher/Halal. <b>Matches the fragmented Chinese supplier tail seen in the file's supplier list.</b></td><td class="src"><a href="https://www.einpresswire.com/article/922092905/five-reputable-sodium-hyaluronate-manufacturers-in-china-habier-biopharma-delivers-certified-ha-raw-materials-globally">[42]</a> · 2026</td></tr>
+      <tr><td><b>India domestic-plant push (PLI)</b></td><td>2026 — bankable DPRs circulating for ₹2.2–30 cr fermentation plants targeting import substitution. Explains the small but real Indian <i>supplier/exporter</i> footprint in the file (Meteoric, Botanic, Titan).</td><td class="src"><a href="https://kamrit.com/business-plans/hyaluronic-acid-plant">[22]</a> · 2026</td></tr>
+      <tr><td><b>Spot-price volatility 15–25%</b></td><td>Chinese spot quotes swung 15–25% over 2023–25 on fermentation-input and freight costs. Confirms currency/logistics risk for import-based trading models.</td><td class="src"><a href="https://www.indexbox.io/store/africa-hyaluronic-acid-products-market-analysis-forecast-size-trends-and-insights/">[24]</a> · 2025</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== SECTION 06 ===================== -->
+<section id="s06" class="report-section">
+  <div class="sec-head"><div class="sec-num">06</div><div><div class="sec-title">Pricing Intelligence</div><div class="sec-sub">By grade &amp; scale, with India cost additions</div></div></div>
+  <div class="card">
+    <div class="alert alert-warn"><b>Data note</b> HA price is dictated by molecular weight, purity grade and documentation, not by acid-vs-salt. Prices below are indicative secondary-research ranges; always confirm against live quotes.</div>
+    <table>
+      <tr><th>Scale / grade</th><th>Price range (USD)</th><th>INR equivalent* / grade</th><th>Source</th></tr>
+      <tr><td>Cosmetic-grade (per gram)</td><td>$5 – $20 /g</td><td>~₹420–1,670/g</td><td class="src"><a href="https://www.indexbox.io/blog/hyaluronic-acid-products-market-forecast-points-higher-toward-2035-driven-by-bioprocessing-and-cgt-demand/">[28]</a></td></tr>
+      <tr><td>Pharma-grade injectable (per gram)</td><td>$100 – $300 /g</td><td>~₹8,300–25,000/g</td><td class="src"><a href="https://www.indexbox.io/blog/hyaluronic-acid-products-market-forecast-points-higher-toward-2035-driven-by-bioprocessing-and-cgt-demand/">[28]</a></td></tr>
+      <tr><td>Ultra-high-purity / CGT grade</td><td>&gt; $500 /g</td><td>~₹41,600+/g</td><td class="src"><a href="https://www.indexbox.io/blog/hyaluronic-acid-products-market-forecast-points-higher-toward-2035-driven-by-bioprocessing-and-cgt-demand/">[28]</a></td></tr>
+      <tr><td>Bulk cosmetic (per kg, indicative)</td><td>~$300 – $2,000 /kg (grade-dependent)</td><td>Derived from file: HA&amp;Salt weight side ≈ <b>$181k/MT</b> blended</td><td class="src">File pivot</td></tr>
+      <tr class="india-row"><td>India import cost additions</td><td colspan="2">BCD on 3913.90 (~7.5%) + Social Welfare Surcharge + <b>IGST 18%</b> (or applicable GST) + air-freight (most HA moves by air) + cold-chain for sterile forms</td><td class="src"><a href="https://www.zauba.com/customs-import-duty/hyaluronic-acid-/india.html">[32]</a></td></tr>
+    </table>
+    <p class="mini-note">*USD→INR ≈ ₹83.3. Verify duty lines against the exact 8-digit ITC-HS at time of import.</p>
+    <div class="pgrid">
+      <div class="pcard"><div class="pl">Price trend</div><div class="pv">Softening (bulk)</div></div>
+      <div class="pcard"><div class="pl">Driver</div><div class="pv">Chinese oversupply</div></div>
+      <div class="pcard"><div class="pl">Premium end</div><div class="pv">Firm (pharma/CGT)</div></div>
+      <div class="pcard"><div class="pl">Currency risk</div><div class="pv">USD/CNY import exposure</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION 07 ===================== -->
+<section id="s07" class="report-section">
+  <div class="sec-head"><div class="sec-num">07</div><div><div class="sec-title">Regulatory, Licensing &amp; Compliance</div><div class="sec-sub">Trading is straightforward; injectables are regulated</div></div></div>
+  <div class="card">
+    <table>
+      <tr><th>Country / body</th><th>Classification &amp; licence</th><th>Key restrictions</th><th>Source</th></tr>
+      <tr class="india-row"><td>🇮🇳 India — CDSCO</td><td>Bulk cosmetic/food-grade HA freely importable &amp; tradable; <b>injectable / dermal-filler / ophthalmic-viscoelastic = medical device / drug</b> needing CDSCO registration &amp; import licence</td><td>Sterile injectables regulated as devices/drugs; cosmetics under Cosmetics Rules 2020</td><td class="src"><a href="https://cdsco.gov.in">cdsco.gov.in</a></td></tr>
+      <tr class="india-row"><td>🇮🇳 India — DGFT (import)</td><td>Bulk HA (3913.90) — <b>free import</b>, no special licence for raw material</td><td>Standard IEC + customs</td><td class="src"><a href="https://www.dgft.gov.in">dgft.gov.in</a></td></tr>
+      <tr class="india-row"><td>🇮🇳 India — DGFT (export) / SCOMET</td><td>Not a SCOMET/dual-use item — <b>free export</b></td><td>None specific</td><td class="src"><a href="https://www.dgft.gov.in">dgft.gov.in</a></td></tr>
+      <tr class="india-row"><td>🇮🇳 India — BIS / FSSAI</td><td>Food-grade HA supplements → FSSAI nutraceutical rules</td><td>Labelling &amp; purity</td><td class="src"><a href="https://www.fssai.gov.in">fssai.gov.in</a></td></tr>
+      <tr><td>🇺🇸 USA — FDA</td><td>Inactive-ingredient DB listed; injectables = PMA/510(k) devices/drugs; HTSUS 3913.90.20</td><td>GMP, DMF for API</td><td class="src"><a href="https://www.customsmobile.com/rulings/docview?doc_id=HQ+H017425">[36]</a></td></tr>
+      <tr><td>🇪🇺 EU — REACH / EMA</td><td>Cosmetic INCI "Sodium Hyaluronate"; injectables under EU MDR</td><td>MDR CE-marking for devices</td><td class="src"><a href="https://www.grandviewresearch.com/industry-analysis/hyaluronic-acid-market">[11]</a></td></tr>
+      <tr><td>🇨🇳 China — NMPA</td><td>Domestic + export CEP/DMF grades</td><td>NMPA registration for medical</td><td class="src"><a href="https://www.pharmacompass.com/manufacturers-suppliers-exporters/hyaluronic-acid">[26]</a></td></tr>
+      <tr><td>🇯🇵 Japan — PMDA</td><td>JDMF-registered pharma grades</td><td>PMDA for medical</td><td class="src"><a href="https://www.pharmacompass.com/manufacturers-suppliers-exporters/hyaluronic-acid">[26]</a></td></tr>
+    </table>
+    <div class="alert alert-success"><b>India regulatory summary (plain language)</b> For an import/trading/sourcing business, <b>bulk HA and sodium hyaluronate are effectively unrestricted</b> — a normal IEC, standard customs duty + GST, and you can trade freely. The regulatory bar rises only if you handle <b>sterile injectables, dermal fillers or ophthalmic viscoelastics</b>, which are medical devices/drugs requiring CDSCO registration. Cosmetic serums fall under the Cosmetics Rules; oral supplements under FSSAI. This makes the low-regulation trading/sourcing modes the natural entry point.</div>
+  </div>
+</section>
+
+<!-- ===================== SECTION 08 ===================== -->
+<section id="s08" class="report-section">
+  <div class="sec-head"><div class="sec-num">08</div><div><div class="sec-title">Potential Customers &amp; Target Companies</div><div class="sec-sub">Drawn from market research and the actual buyers in your trade file</div></div></div>
+  <div class="card">
+    <h3>8A — Indian target companies (import / distribution / formulation)</h3>
+    <table>
+      <tr><th>Company</th><th>Segment &amp; location</th><th>Why a target</th><th>Website</th></tr>
+      <tr class="india-row"><td>Yasham Speciality Ingredients</td><td>Cosmetic ingredients, Mumbai</td><td><b>Top Indian buyer in file</b> (imports Japanese HA via Mitsuya) — active bulk demand</td><td class="src">yasham.com</td></tr>
+      <tr class="india-row"><td>Valuetree Ingredients</td><td>Cosmetic/nutra ingredients</td><td>Large file buyer of Bloomage HA (China) — high shipment count</td><td class="src">—</td></tr>
+      <tr class="india-row"><td>Barentz India</td><td>Ingredient distribution</td><td>Big buyer (20+ MT in file); distribution reach</td><td class="src">barentz.com</td></tr>
+      <tr class="india-row"><td>Sundyota Numandis</td><td>Pharma/derma, Ahmedabad</td><td>Imports Spanish (Bioiberica) pharma HA — quality buyer</td><td class="src">sundyota.com</td></tr>
+      <tr class="india-row"><td>Chemkart India</td><td>B2B chemical marketplace</td><td>Imports Chinese HA in bulk MT — trading counterpart</td><td class="src">chemkart.com</td></tr>
+      <tr class="india-row"><td>Renaissance / Arihant / Nano Tech / Molecules Bio</td><td>Chem distributors</td><td>Recurring China-HA importers in file — sourcing partners/competitors</td><td class="src">—</td></tr>
+      <tr class="india-row"><td>Aurolab Trust</td><td>Ophthalmic devices, Madurai</td><td>File buyer on finished side — ophthalmic HA user</td><td class="src">aurolab.com</td></tr>
+      <tr class="india-row"><td>Sigma-Aldrich (Merck) India</td><td>Research chemicals</td><td>Research-grade HA reseller (CRO channel)</td><td class="src">sigmaaldrich.com</td></tr>
+      <tr class="india-row"><td>Herbo Nutra / R P Chemicals / Estrellas Life Sciences</td><td>Nutra/cosmetic, Delhi-NCR</td><td>Listed India HA suppliers — resale &amp; formulation demand</td><td class="src">indiamart listed</td></tr>
+      <tr class="india-row"><td>Cosmetic brands (Minimalist, Dot &amp; Key, Plum, mCaffeine)</td><td>D2C skincare</td><td>Fast-growing HA-serum brands needing reliable bulk supply</td><td class="src">—</td></tr>
+    </table>
+    <h3>8B — Global target companies</h3>
+    <table>
+      <tr><th>Company</th><th>Country &amp; segment</th><th>Why a target</th></tr>
+      <tr><td>Bloomage Biotechnology</td><td>China — bulk API</td><td>Primary sourcing supplier (largest, best price)</td></tr>
+      <tr><td>Shandong Focuschem / Fufeng / Habier / Anhua</td><td>China — bulk</td><td>Alternate sourcing / price benchmarking</td></tr>
+      <tr><td>Kewpie</td><td>Japan — food/pharma</td><td>Premium-grade sourcing (DMF)</td></tr>
+      <tr><td>HTL Biotechnology</td><td>France — pharma sterile</td><td>Injectable-grade sourcing partner</td></tr>
+      <tr><td>Bioiberica</td><td>Spain — pharma HA</td><td>Already supplies India (file) — quality partner</td></tr>
+      <tr><td>Contipro / DSM</td><td>Czech / NL — pharma</td><td>Europe pharma-grade sourcing</td></tr>
+      <tr><td>Galderma / AbbVie (Allergan)</td><td>Global — fillers</td><td>Finished-filler customers/partners</td></tr>
+      <tr><td>Laboratorios Sophia</td><td>Mexico — ophthalmic</td><td>Large finished-side buyer in file</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== SECTION 09 ===================== -->
+<section id="s09" class="report-section">
+  <div class="sec-head"><div class="sec-num">09</div><div><div class="sec-title">Strategic Business Frameworks</div><div class="sec-sub">SWOT · Porter's Five Forces · Value Chain</div></div></div>
+  <div class="card">
+    <h3>9A — SWOT (our company entering HA trading/sourcing)</h3>
+    <div class="swot">
+      <div class="swot-q sw-s"><h4>Strengths</h4><ul>
+        <li>Established import-export &amp; domestic-trade infrastructure</li>
+        <li>India = large, growing, import-dependent demand base</li>
+        <li>Low regulatory barrier for bulk cosmetic/food grade</li>
+        <li>CRO/R&amp;D arm can serve research-grade &amp; small-lot buyers</li>
+      </ul></div>
+      <div class="swot-q sw-w"><h4>Weaknesses</h4><ul>
+        <li>No domestic fermentation capacity (pure trading margin)</li>
+        <li>Thin margins on commoditised cosmetic-grade bulk</li>
+        <li>Dependence on Chinese supply &amp; USD/CNY FX</li>
+        <li>Pharma-injectable grade needs CDSCO capability we may lack</li>
+      </ul></div>
+      <div class="swot-q sw-o"><h4>Opportunities</h4><ul>
+        <li>Import-substitution &amp; PLI-backed domestic manufacturing later</li>
+        <li>High-margin pharma / ophthalmic / CGT grades</li>
+        <li>Serving D2C skincare boom with reliable supply + documentation</li>
+        <li>Chinese oversupply = buyer-favourable sourcing prices now</li>
+      </ul></div>
+      <div class="swot-q sw-t"><h4>Threats</h4><ul>
+        <li>Price war / margin compression (Chinese oversupply)</li>
+        <li>Direct China→India buyer disintermediation</li>
+        <li>FX &amp; freight volatility (15–25% spot swings)</li>
+        <li>Regulatory tightening on injectable/aesthetic HA</li>
+      </ul></div>
+    </div>
+
+    <h3>9B — Porter's Five Forces</h3>
+    <div class="forces">
+      <div class="force f-hi"><h4>Competitive rivalry</h4><div class="lvl" style="color:#b71c1c;">HIGH</div><p>Many Chinese producers + Indian importers/distributors; commoditised bulk grade → price competition.</p></div>
+      <div class="force f-med"><h4>Threat of new entrants</h4><div class="lvl" style="color:#e65100;">MEDIUM</div><p>Trading entry is easy (low capex); manufacturing entry is hard (fermentation capex + purity know-how).</p></div>
+      <div class="force f-hi"><h4>Supplier power</h4><div class="lvl" style="color:#b71c1c;">MEDIUM–HIGH</div><p>Bloomage &amp; top Chinese makers dominate supply, but oversupply currently tilts leverage toward buyers.</p></div>
+      <div class="force f-med"><h4>Buyer power</h4><div class="lvl" style="color:#e65100;">MEDIUM</div><p>Large formulators/distributors negotiate hard; small D2C brands are price-takers needing reliability.</p></div>
+      <div class="force f-lo"><h4>Threat of substitutes</h4><div class="lvl" style="color:#1b5e20;">LOW</div><p>HA is hard to substitute in aesthetics/ophthalmic; minor pressure from other humectants/GAGs.</p></div>
+      <div class="force f-med"><h4>Overall attractiveness</h4><div class="lvl" style="color:#e65100;">MODERATE</div><p>Attractive demand growth, but thin bulk margins reward differentiation (grade, documentation, reliability).</p></div>
+    </div>
+
+    <h3>9C — Value chain</h3>
+    <div class="chain">
+      <div class="chain-step"><div class="cs-n">01</div>Raw Material</div>
+      <div class="chain-step"><div class="cs-n">02</div>Synthesis / Fermentation</div>
+      <div class="chain-step on"><div class="cs-n">03</div>Sourcing / Import</div>
+      <div class="chain-step on"><div class="cs-n">04</div>Quality Testing</div>
+      <div class="chain-step on"><div class="cs-n">05</div>Distribution</div>
+      <div class="chain-step on"><div class="cs-n">06</div>Export / Re-export</div>
+      <div class="chain-step on"><div class="cs-n">07</div>End Customer</div>
+    </div>
+    <table>
+      <tr><th>Stage</th><th>Our participation?</th><th>Opportunity</th><th>Timeline</th></tr>
+      <tr><td>Raw material</td><td><span class="tag t-no">No</span></td><td>Feedstock supply (later, if plant)</td><td>Yr 2+</td></tr>
+      <tr><td>Synthesis / fermentation</td><td><span class="tag t-no">Not yet</span></td><td>PLI-backed domestic plant (import substitution)</td><td>Yr 2–3</td></tr>
+      <tr><td>Sourcing / import</td><td><span class="tag t-yes">Yes</span></td><td>China/Japan/EU sourcing at buyer-favourable prices</td><td>Month 1–3</td></tr>
+      <tr><td>Quality testing</td><td><span class="tag t-yes">Yes</span></td><td>CRO/R&amp;D arm adds QC &amp; documentation value</td><td>Month 1–6</td></tr>
+      <tr><td>Distribution</td><td><span class="tag t-yes">Yes</span></td><td>Serve D2C brands, formulators, nutra</td><td>Month 3–6</td></tr>
+      <tr><td>Export / re-export</td><td><span class="tag t-yes">Yes</span></td><td>Re-export to neighbouring/regulated markets</td><td>Month 6–12</td></tr>
+      <tr><td>End customer</td><td><span class="tag t-yes">Yes</span></td><td>Direct pharma/ophthalmic/cosmetic accounts</td><td>Month 6+</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== SECTION 10 ===================== -->
+<section id="s10" class="report-section">
+  <div class="sec-head"><div class="sec-num">10</div><div><div class="sec-title">Feasibility Summary &amp; Management Recommendation</div><div class="sec-sub">Verdict, business modes, risks, next steps</div></div></div>
+  <div class="card">
+    <div class="verdict cond">
+      <div class="vlabel">Overall verdict</div>
+      <div class="vmain">CONDITIONAL — RECOMMENDED for Import, Sourcing &amp; Distribution; defer Manufacturing</div>
+      <p>Enter now through low-capex import / sourcing / domestic-trading of bulk cosmetic- &amp; food-grade HA, using the CRO/R&amp;D arm for QC and documentation to differentiate. Treat pharma-injectable grade as a phased, higher-margin add-on once CDSCO capability is in place. Hold manufacturing as a Year-2–3 PLI-backed option pending a firmer margin case, given Chinese oversupply.</p>
+    </div>
+
+    <h4>Business-mode recommendations</h4>
+    <table>
+      <tr><th>Business mode</th><th>Recommendation</th><th>Rationale</th></tr>
+      <tr><td>Import &amp; domestic trading</td><td><span class="tag t-lo">RECOMMENDED</span></td><td>India import-dependent; file confirms strong, recurring demand; low regulatory bar for bulk</td></tr>
+      <tr><td>Sourcing &amp; marketing</td><td><span class="tag t-lo">RECOMMENDED</span></td><td>Chinese oversupply = favourable prices; opportunity to package quality + documentation</td></tr>
+      <tr><td>CRO / R&amp;D support</td><td><span class="tag t-lo">RECOMMENDED</span></td><td>Research-grade &amp; small-lot supply (Sigma-type channel); adds QC value to trading</td></tr>
+      <tr><td>Export / re-export</td><td><span class="tag t-med">SELECTIVE</span></td><td>Re-export to regulated/neighbouring markets; India already a small net exporter in file</td></tr>
+      <tr><td>Manufacturing</td><td><span class="tag t-med">DEFER (Yr 2–3)</span></td><td>Fermentation capex + purity know-how; PLI support exists but oversupply pressures margins now</td></tr>
+    </table>
+
+    <h4>Key risks</h4>
+    <table>
+      <tr><th>Risk</th><th>Level</th><th>Mitigation</th></tr>
+      <tr><td>Price war / margin compression</td><td><span class="tag t-hi">HIGH</span></td><td>Differentiate on grade, documentation, reliability; avoid pure commodity bulk</td></tr>
+      <tr><td>FX &amp; freight volatility (15–25%)</td><td><span class="tag t-hi">HIGH</span></td><td>Forward cover; build freight into pricing; multi-origin sourcing</td></tr>
+      <tr><td>Supplier concentration (China)</td><td><span class="tag t-med">MEDIUM</span></td><td>Qualify Japan/EU/India alternates; dual-source key grades</td></tr>
+      <tr><td>Buyer disintermediation (China→India direct)</td><td><span class="tag t-med">MEDIUM</span></td><td>Add QC, small-lot breaking, credit terms, speed</td></tr>
+      <tr><td>Regulatory (injectable/aesthetic)</td><td><span class="tag t-med">MEDIUM</span></td><td>Start with non-regulated bulk; build CDSCO capability before pharma grade</td></tr>
+      <tr><td>Data-quality / mis-classification</td><td><span class="tag t-lo">LOW–MED</span></td><td>Verify ITC-HS per shipment; see Section 11 anomalies</td></tr>
+    </table>
+
+    <h4>Recommended next steps</h4>
+    <ol class="steps">
+      <li><b>Qualify 3–4 suppliers</b> (Bloomage + one Japanese/EU + one Indian) and benchmark landed cost by grade. <span class="tl">Month 1–2</span></li>
+      <li><b>Pilot import</b> of cosmetic/food-grade HA to 2–3 anchor buyers (Yasham/Valuetree-type). <span class="tl">Month 1–3</span></li>
+      <li><b>Stand up QC/documentation</b> via CRO arm (CoA, MW, endotoxin) as the differentiator. <span class="tl">Month 2–4</span></li>
+      <li><b>Build D2C-brand distribution</b> channel + small-lot breaking service. <span class="tl">Month 3–6</span></li>
+      <li><b>Assess pharma-grade / CDSCO pathway</b> for injectable/ophthalmic upside. <span class="tl">Month 6–9</span></li>
+      <li><b>Evaluate PLI-backed manufacturing DPR</b> if trading volumes &amp; margins justify. <span class="tl">Month 9–18</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== SECTION 11 ===================== -->
+<section id="s11" class="report-section">
+  <div class="sec-head"><div class="sec-num">11</div><div><div class="sec-title">Trade Data Analysis</div><div class="sec-sub">Two categories, two unit-systems — kept separate, shown side by side</div></div></div>
+
+  <div class="card">
+    <h3>Overview &amp; data structure</h3>
+    <table>
+      <tr><th>Parameter</th><th>Value</th><th>Notes</th></tr>
+      <tr><td>Data type identified</td><td><b>Global trade data</b> (multi-country imports &amp; exports)</td><td>Origins &amp; destinations across China, Japan, EU, US, India, LatAm, MENA</td></tr>
+      <tr><td>Sheets read</td><td>PRODUCT YEARLY-TREND, IMPORTING/EXPORTING COUNTRIES, GLOBAL &amp; INDIAN SUPPLIERS/BUYERS, DATA (raw, 7,186 rows)</td><td>Pivots read first, per protocol</td></tr>
+      <tr><td>Categories</td><td>(1) <b>Hyaluronic Acid &amp; Its Salt</b> &nbsp;·&nbsp; (2) <b>Mix &amp; Finished Products of HA</b></td><td>Analysed separately throughout</td></tr>
+      <tr><td>Period</td><td>2024, 2025, 2026 (2026 partial)</td><td>2026 is a part-year — not directly comparable</td></tr>
+      <tr><td>Unit systems</td><td><b>Standard weight units (KG-based)</b> vs <b>Other/packaging units (OT: PCS/PKG/BAGS/UNT)</b></td><td>Kept separate; shown side by side below</td></tr>
+    </table>
+    <div class="alert alert-info"><b>Why the separation matters</b> The file deliberately splits each category into two unit-worlds. <b>Weight-based (KG/MT) shipments</b> give commercially meaningful value and price-per-tonne. <b>"Other-unit" (OT) shipments</b> are counted in pieces/packages/bags, so their MT and $/MT figures are <b>not price-meaningful</b> — they describe finished-goods movement, not bulk material. We therefore never blend the two.</div>
+  </div>
+
+  <div class="card">
+    <h3>Category totals — side by side (both unit systems)</h3>
+    <table>
+      <tr><th>Metric</th><th>HA &amp; Salt — Weight (KG)</th><th>HA &amp; Salt — Other (OT)</th><th>Mix &amp; Finished — Weight (KG)</th><th>Mix &amp; Finished — Other (OT)</th></tr>
+      <tr><td><b>Value (MN$)</b></td><td><b>45.39</b></td><td>18.49</td><td>5.12</td><td>0.53</td></tr>
+      <tr><td><b>Quantity (MT)</b></td><td>250.64</td><td>2,021.43</td><td>57.60</td><td>10,014.59</td></tr>
+      <tr><td><b>Shipments</b></td><td>3,456</td><td>1,827</td><td>563</td><td>1,340</td></tr>
+      <tr><td>Derived price ($/MT)</td><td class="hl">≈ $181,100</td><td>≈ $9,150 <span class="mini-note">(not meaningful)</span></td><td>≈ $88,800</td><td>≈ $53 <span class="mini-note">(artifact)</span></td></tr>
+      <tr><td>Value / shipment</td><td>$13,135</td><td>$10,123</td><td>$9,087</td><td>$393</td></tr>
+    </table>
+    <div class="alert alert-warn"><b>Headline read</b> <b>Hyaluronic Acid &amp; Its Salt</b> is the real value engine — ~$63.9 Mn total across both unit systems, and on the weight side it prices like a genuine specialty material (~$181k/MT). <b>Mix &amp; Finished Products</b> is a high-tonnage but low-value finished-goods category — its 10,015 MT of "other-unit" volume carries only $0.53 Mn, i.e. package/piece counts masquerading as tonnes. <b>These two must never be summed into one market size.</b></div>
+  </div>
+
+  <div class="card">
+    <h3>Year-wise trend (weight-based, the meaningful series)</h3>
+    <table>
+      <tr><th>Year</th><th colspan="3">HA &amp; Salt (KG side)</th><th colspan="3">Mix &amp; Finished (KG side)</th></tr>
+      <tr><th></th><th>Value MN$</th><th>Qty MT</th><th>Shipments</th><th>Value MN$</th><th>Qty MT</th><th>Shipments</th></tr>
+      <tr><td>2024</td><td>18.70</td><td>108.52</td><td>1,556</td><td>1.81</td><td>19.57</td><td>229</td></tr>
+      <tr><td>2025</td><td>19.04</td><td>103.10</td><td>1,471</td><td>2.53</td><td>30.28</td><td>259</td></tr>
+      <tr><td>2026 (partial)</td><td>7.66</td><td>39.01</td><td>429</td><td>0.78</td><td>7.75</td><td>75</td></tr>
+      <tr><td><b>YoY 2024→2025 (value)</b></td><td><b>+1.8%</b></td><td>−5.0%</td><td>−5.5%</td><td><b>+39.7%</b></td><td>+54.7%</td><td>+13.1%</td></tr>
+    </table>
+    <p><b>Focus point:</b> HA &amp; Salt value held roughly flat 2024→2025 (+1.8%) while <b>volume fell 5%</b> — meaning <b>price per unit firmed slightly</b> (value defended on less tonnage). Mix &amp; Finished grew fast off a small base (+40% value, +55% volume), consistent with the global "skinification"/finished-serum boom. 2026 is a part-year and is not annualised here.</p>
+  </div>
+
+  <div class="card">
+    <h3>Top importing countries — HA &amp; Salt (weight side, after stripping data artifact)</h3>
+    <table>
+      <tr><th>Rank</th><th>Destination country</th><th>Value MN$</th><th>Qty MT</th><th>Shipments</th></tr>
+      <tr class="india-row"><td>1</td><td>🇮🇳 <b>India</b></td><td>10.90</td><td>95.11</td><td>843</td></tr>
+      <tr><td>2</td><td>Iran</td><td>8.71</td><td>8.40</td><td>104</td></tr>
+      <tr><td>3</td><td>Brazil</td><td>8.69</td><td>66.15</td><td>492</td></tr>
+      <tr><td>4</td><td>Mexico</td><td>6.58</td><td>41.22</td><td>376</td></tr>
+      <tr><td>5</td><td>Vietnam</td><td>3.32</td><td>13.87</td><td>538</td></tr>
+      <tr><td>6</td><td>Colombia</td><td>2.09</td><td>27.47</td><td>249</td></tr>
+      <tr><td>7</td><td>Argentina</td><td>1.70</td><td>5.83</td><td>124</td></tr>
+    </table>
+    <p class="mini-note">A "Venezuela" line (~$50.5 Mn / 308 MT / 4,020 shipments) exactly equals the file's grand total and is a freight-forwarder/pivot artifact, not a real end-destination — excluded here and flagged in Anomalies.</p>
+    <div class="alert alert-success"><b>India is the clear #1 genuine importer of HA &amp; Salt by value</b> — ~$10.9 Mn / 95 MT / 843 shipments — confirming the import-dependent thesis and validating an India-centric import/distribution strategy.</div>
+  </div>
+
+  <div class="card">
+    <h3>Top exporting (origin) countries — HA &amp; Salt (weight side)</h3>
+    <table>
+      <tr><th>Rank</th><th>Country of origin</th><th>Value MN$</th><th>Qty MT</th><th>Shipments</th></tr>
+      <tr><td>1</td><td>Italy</td><td>3.60</td><td>2.48</td><td>52</td></tr>
+      <tr><td>2</td><td>France</td><td>3.24</td><td>2.77</td><td>121</td></tr>
+      <tr><td>3</td><td>Japan</td><td>2.41</td><td>1.23</td><td>158</td></tr>
+      <tr class="india-row"><td>4</td><td>🇮🇳 <b>India</b></td><td>1.91</td><td>14.10</td><td>225</td></tr>
+      <tr><td>5</td><td>China</td><td>1.21</td><td>0.04</td><td>5</td></tr>
+      <tr><td>6</td><td>South Korea</td><td>1.31</td><td>9.92</td><td>110</td></tr>
+      <tr><td>7</td><td>USA</td><td>1.47</td><td>23.97</td><td>155</td></tr>
+    </table>
+    <p class="mini-note">Note: a "Brazil/China" mega-line again mirrors the grand total (forwarder artifact) and is excluded. High-value/low-volume origins (Italy, France, Japan) = premium pharma/ophthalmic grades; India already exports meaningfully (14 MT), showing a two-way trade footprint.</p>
+  </div>
+
+  <div class="card">
+    <h3>Major suppliers &amp; buyers (weight side, real trade)</h3>
+    <div class="two-col">
+      <div>
+        <h4>Top suppliers</h4>
+        <table>
+          <tr><th>Supplier</th><th>MN$</th><th>Ship.</th></tr>
+          <tr><td>Bloomage Biotechnology (CN)</td><td>8.98</td><td>616</td></tr>
+          <tr><td>HTL Biotechnology (FR)</td><td>3.38</td><td>19</td></tr>
+          <tr><td>Shandong Focusfreda (CN)</td><td>2.46</td><td>224</td></tr>
+          <tr><td>Mitsuya Boeki (JP)</td><td>1.15</td><td>56</td></tr>
+          <tr><td>AMHWA Biopharm (KR)</td><td>0.84</td><td>131</td></tr>
+        </table>
+      </div>
+      <div>
+        <h4>Top buyers (excl. artifact line)</h4>
+        <table>
+          <tr><th>Buyer</th><th>MN$</th><th>Ship.</th></tr>
+          <tr><td>Nikan Teb Kimia (IR)</td><td>2.97</td><td>13</td></tr>
+          <tr><td>Lab. Sophia (MX)</td><td>2.41</td><td>7</td></tr>
+          <tr class="india-row"><td>Barentz India</td><td>1.91</td><td>91</td></tr>
+          <tr class="india-row"><td>Yasham Speciality (IN)</td><td>1.36</td><td>75</td></tr>
+          <tr class="india-row"><td>Valuetree Ingredients (IN)</td><td>1.34</td><td>99</td></tr>
+        </table>
+      </div>
+    </div>
+    <p><b>Concentration:</b> Supply is <b>moderately concentrated</b> at the top (Bloomage alone ≈ $9 Mn on the real weight side) with a long fragmented tail of Chinese makers; buying is <b>fragmented</b> across many mid-size formulators/distributors — including three Indian names in the top five. This buyer fragmentation + supplier concentration is exactly the structure a value-adding importer/distributor can exploit.</p>
+  </div>
+
+  <div class="card">
+    <h3>Standard vs Non-Standard units — comparative insight</h3>
+    <table>
+      <tr><th>Unit type</th><th>Category</th><th>Value MN$</th><th>Qty MT</th><th>Shipments</th><th>Key insight</th></tr>
+      <tr><td>Standard (KG)</td><td>HA &amp; Salt</td><td>45.39</td><td>250.64</td><td>3,456</td><td>Price-meaningful; true material trade</td></tr>
+      <tr><td>Other (OT)</td><td>HA &amp; Salt</td><td>18.49</td><td>2,021.43</td><td>1,827</td><td>Mixed pack/piece; value real but MT inflated</td></tr>
+      <tr><td>Standard (KG)</td><td>Mix &amp; Finished</td><td>5.12</td><td>57.60</td><td>563</td><td>Genuine finished-material weight</td></tr>
+      <tr><td>Other (OT)</td><td>Mix &amp; Finished</td><td>0.53</td><td>10,014.59</td><td>1,340</td><td><b>Package/piece counts logged as MT → $53/MT artifact</b></td></tr>
+    </table>
+    <div class="alert alert-danger"><b>Management interpretation</b> Any market-sizing that adds the OT "MT" figures will <b>overstate volume ~50×</b> and understate price. For decision-making, use the <b>weight-based (KG) numbers for material sizing</b> and treat OT shipment <b>counts</b> (not tonnes) as the finished-goods demand signal. Pricing conclusions must come only from the standard-unit series.</div>
+  </div>
+
+  <div class="card">
+    <h3>Anomaly detection <span style="font-size:11px;color:#546e7a;">(all findings flagged)</span></h3>
+    <table>
+      <tr><th>Anomaly</th><th>Finding</th><th>Implication</th></tr>
+      <tr><td style="color:#b71c1c;font-weight:700;">Grand-total mirror rows</td><td>"Venezuela" (import) &amp; "Brazil/China" (export) lines each equal the exact grand total ($50.51 Mn / 308 MT / 4,019–4,035 ship). Buyer "Sigma Aldrich Chemie / Compact Logistics / Praj Industries" also mirror totals.</td><td>Freight-forwarder / pivot roll-up artifacts — <b>exclude from country &amp; company rankings</b> to avoid double counting</td></tr>
+      <tr><td style="color:#b71c1c;font-weight:700;">$53/MT on Mix &amp; Finished OT</td><td>10,015 MT for only $0.53 Mn</td><td>Packaging-unit counts mislabelled as tonnes; not a price</td></tr>
+      <tr><td style="color:#b71c1c;font-weight:700;">Zero-value, high-tonnage OT lines</td><td>US/China/Belgium export OT rows show large MT but $0 value</td><td>Value not captured for pieces/packages; use shipment counts only</td></tr>
+      <tr><td style="color:#b71c1c;font-weight:700;">Extreme $/MT on tiny lots</td><td>Some Iran/France/Argentina buyer lines show $15,000–56,000/MT</td><td>Very small, high-purity pharma parcels — genuine but not representative of bulk price</td></tr>
+      <tr><td style="color:#b71c1c;font-weight:700;">Supplier fragmentation</td><td>Long tail of small Chinese suppliers below Bloomage</td><td>Sourcing leverage for buyers; easy multi-sourcing</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Strategic trade insights → news linkage</h3>
+    <table>
+      <tr><th>#</th><th>Finding</th><th>News linkage</th><th>Management action</th></tr>
+      <tr><td>1</td><td>India = #1 genuine HA &amp; Salt importer by value ($10.9 Mn)</td><td>Confirms import-dependence &amp; PLI import-substitution narrative [22]</td><td>Anchor an India import/distribution business now</td></tr>
+      <tr><td>2</td><td>HA &amp; Salt value flat but volume down 2024→25 (price firmed)</td><td>Runs against pure "oversupply crash" story — premium grades hold value [40][46]</td><td>Skew mix toward higher-grade, documented material</td></tr>
+      <tr><td>3</td><td>Bloomage dominates real supply; long Chinese tail</td><td>Matches "5 certified Chinese makers" &amp; oversupply news [42][40]</td><td>Dual-source; use tail for price leverage vs Bloomage</td></tr>
+      <tr><td>4</td><td>Mix &amp; Finished growing +40% value off small base</td><td>Tracks finished-serum "skinification" boom [17]</td><td>Add a finished-goods/private-label line for D2C brands</td></tr>
+      <tr><td>5</td><td>Premium origins Italy/France/Japan high-value/low-volume</td><td>HTL sterile line, Fidia deals = Europe owns premium [41][27]</td><td>Partner for injectable/ophthalmic grade later</td></tr>
+      <tr><td>6</td><td>Three Indian names in top-5 buyers</td><td>D2C/formulator demand surge [22]</td><td>Target Yasham/Valuetree/Barentz as anchor accounts</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== REFERENCES ===================== -->
+<section id="refs" class="report-section">
+  <div class="sec-head"><div class="sec-num">§</div><div><div class="sec-title">Sources &amp; References</div><div class="sec-sub">All URLs verified via web search, July 2026</div></div></div>
+  <div class="card">
+    <ol class="refs">
+      <li>The Cosmetic Chemist — Hyaluronic Acid molecule profile · <a href="http://www.thecosmeticchemist.com/molecule_of_the_week/hyaluronic_acid.html">link</a></li>
+      <li>ChemicalBook — Sodium hyaluronate (9067-32-7) · <a href="https://www.chemicalbook.com/ChemicalProductProperty_EN_CB4176691.htm">link</a></li>
+      <li>US Biological — Hyaluronic Acid Sodium Salt · <a href="https://www.usbio.net/biochemicals/278694/Hyaluronic-Acid-Sodium-Salt">link</a></li>
+      <li>Chemsrc — Sodium Hyaluronate · <a href="https://www.chemsrc.com/en/cas/9067-32-7_167220.html">link</a></li>
+      <li>Selleck — Sodium Hyaluronate · <a href="https://www.selleckchem.com/products/sodium-hyaluronate.html">link</a></li>
+      <li>USPTO Patent 10322142 — bio-fermented sodium hyaluronate · <a href="https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/10322142">link</a></li>
+      <li>Alfa Chemistry — Sodium Hyaluronate · <a href="https://www.alfa-chemistry.com/product/sodium-hyaluronate-cas-9067-32-7-295847.html">link</a></li>
+      <li>Grand View Research — HA Market 2026-2033 · <a href="https://www.grandviewresearch.com/industry-analysis/hyaluronic-acid-market">link</a></li>
+      <li>Grand View Research — HA Market press release · <a href="https://www.grandviewresearch.com/press-release/global-hyaluronic-acid-market">link</a></li>
+      <li>MarkNtel — Global HA Market · <a href="https://www.marknteladvisors.com/research-library/global-hyaluronic-acid-market.html">link</a></li>
+      <li>Straits Research — HA Market · <a href="https://straitsresearch.com/report/hyaluronic-acid-market">link</a></li>
+      <li>Inkwood Research — HA Market · <a href="https://www.inkwoodresearch.com/reports/hyaluronic-acid-market/">link</a></li>
+      <li>Research Nester — HA Market to 2035 · <a href="https://www.researchnester.com/reports/hyaluronic-acid-market/7281">link</a></li>
+      <li>Mordor Intelligence — HA Products Market · <a href="https://www.mordorintelligence.com/industry-reports/hyaluronic-acid-products-market">link</a></li>
+      <li>Grand View Research — HA Raw-Material Market · <a href="https://www.grandviewresearch.com/industry-analysis/hyaluronic-acid-ha-raw-material-market">link</a></li>
+      <li>Future Market Insights — HA Supplement Market · <a href="https://www.futuremarketinsights.com/reports/hyaluronic-acid-supplement-market">link</a></li>
+      <li>Custom Market Insights — HA Market · <a href="https://www.custommarketinsights.com/report/hyaluronic-acid-market/">link</a></li>
+      <li>KAMRIT — HA Plant Project Report (India) · <a href="https://kamrit.com/business-plans/hyaluronic-acid-plant">link</a></li>
+      <li>Valuates — Global &amp; India HA Market · <a href="https://reports.valuates.com/market-reports/QYRE-Auto-34F15593/global-and-india-hyaluronic-acid">link</a></li>
+      <li>Cactus Botanics — HA Supply-Chain Economics · <a href="https://www.cactusbotanics.com/faq/7325.html">link</a></li>
+      <li>IndexBox — Africa HA Products Market (pricing) · <a href="https://www.indexbox.io/store/africa-hyaluronic-acid-products-market-analysis-forecast-size-trends-and-insights/">link</a></li>
+      <li>IndexBox — HA Products Forecast 2035 (grade pricing) · <a href="https://www.indexbox.io/blog/hyaluronic-acid-products-market-forecast-points-higher-toward-2035-driven-by-bioprocessing-and-cgt-demand/">link</a></li>
+      <li>PharmaCompass — HA API manufacturers/DMF · <a href="https://www.pharmacompass.com/manufacturers-suppliers-exporters/hyaluronic-acid">link</a></li>
+      <li>MarkSpark — China HA Market (oversupply) · <a href="https://marksparksolutions.com/reports/china-hyaluronic-acid-market">link</a></li>
+      <li>36Kr — Bloomage reconstruction · <a href="https://eu.36kr.com/en/p/3453714805282179">link</a></li>
+      <li>EIN Presswire — Chinese Na-hyaluronate makers 2026 · <a href="https://www.einpresswire.com/article/922092905/five-reputable-sodium-hyaluronate-manufacturers-in-china-habier-biopharma-delivers-certified-ha-raw-materials-globally">link</a></li>
+      <li>Market Growth Reports — HA API Market · <a href="https://www.marketgrowthreports.com/market-reports/hyaluronic-acid-api-market-102648">link</a></li>
+      <li>Zauba — Sodium Hyaluronate imports (HS 3913) · <a href="https://www.zauba.com/import-sodium+hyaluronate-hs-code.html">link</a></li>
+      <li>Volza — HA HSN codes · <a href="https://www.volza.com/hs-codes/search/hyaluronic-acid/">link</a></li>
+      <li>US Customs Ruling HQ H017425 — pharma-grade classification · <a href="https://www.customsmobile.com/rulings/docview?doc_id=HQ+H017425">link</a></li>
+      <li>Zauba — HA India import duty · <a href="https://www.zauba.com/customs-import-duty/hyaluronic-acid-/india.html">link</a></li>
+      <li>Technavio — HA Market Analysis · <a href="https://www.technavio.com/report/hyaluronic-acid-market-analysis">link</a></li>
+      <li><b>Supplied trade-data workbook:</b> hyaluronic_acid.xlsx (PRODUCT YEARLY-TREND &amp; related pivots, DATA raw)</li>
+    </ol>
+  </div>
+</section>
+  </div><!-- /wrap -->
+
+  <div class="footer">
+    <b>Hyaluronic Acid &amp; Sodium Hyaluronate — Market Intelligence &amp; Feasibility Report</b><br>
+    Report Type: Secondary Market Research + Trade Data Analysis &nbsp;|&nbsp; Prepared by: Market Intelligence &nbsp;|&nbsp; July 2026<br>
+    <span style="color:#78909c;font-size:10.5px;">CONFIDENTIAL — For internal management use only. Based on publicly available secondary research and the supplied trade-data workbook; third-party market-size estimates may vary. Not investment or financial advice. To save as PDF: use the ⬇ Download PDF button (or Ctrl/Cmd+P) → Save as PDF, with background graphics enabled.</span>
+  </div>
+</div><!-- /main-content -->
+
+<script>
+document.querySelectorAll('.nav-link').forEach(a=>{
+  a.addEventListener('click',()=>{ /* smooth handled by CSS */ });
+});
+const links=[...document.querySelectorAll('.nav-link')];
+const map={}; links.forEach(l=>map[l.dataset.section]=l);
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.remove('active'));
+      const id=e.target.id; if(map[id])map[id].classList.add('active');
+    }
+  });
+},{rootMargin:'-15% 0px -75% 0px',threshold:0});
+document.querySelectorAll('.report-section').forEach(s=>obs.observe(s));
+</script>
+</body>
+</html>
